@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.certificationheader_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  background-color: rgb(25, 25, 76);
+  z-index: 1;
+}
+.certificationheader_main h1 {
+  color: white;
+  font-size: 40px;
+}
+.certificationheader_main > button {
+  padding: 0 20px;
+  font-size: 25px;
+  background-color: rgb(66, 66, 139);
+  color: white;
+  border: none;
+}
+
+.certificationheader_main > button:active {
+  color: blue;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 60px;
+}
+#main {
+  color: rgb(254, 44, 44);
+  font-size: 40px;
+}
+nav > a {
+  color: white;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+#home {
+  color: rgb(255, 8, 8);
+}
+nav > a:hover {
+  color: rgb(255, 8, 8);
+}
+@media (max-width: 700px) {
+  .certificationheader_main nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+@media (min-width: 480px) {
+  .certificationheader_main {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .certificationheader_main {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
